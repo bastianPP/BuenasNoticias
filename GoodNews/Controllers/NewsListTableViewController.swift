@@ -28,6 +28,7 @@ class NewsListTableViewController: UITableViewController {
             if let articles = articles {
                 self.articleListVM = ArticleListViewModel(articles: articles)
                 
+                //Actualiza la lista en el TableView
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
